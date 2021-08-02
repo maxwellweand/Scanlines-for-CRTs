@@ -9,6 +9,8 @@ When using a CRT monitor, however, we can achieve much better results by generat
 
 Place the folder "Scanlines-for-CRTs.shader" from this repository into the "Video Shaders" folder of your higan installation. Then, select it in higan from Settings->Video Shader.
 
+Make sure that "Integral Scaling" is checked under higan's video settings. Otherwise, accurate scanlines cannot be drawn.
+
 # Scanlines
 
 When older consoles like the SNES, NES, etc. output video to a TV, they are only encoding about half as many horizontal lines as the TV's vertical resolution. This squished 'half-height' video is then spaced out across the entire picture tube, and we end up with black space between the color lines. Most emulators do not have this behavior by default, and instead double each line in order to create a solid image.
