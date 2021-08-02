@@ -1,9 +1,9 @@
 # More Accurate 240p Scanlines for CRTs
-This shader is meant to provide accurate scanlines for those emulating 240p consoles on a CRT monitor. In order to properly use this shader, the output vertical resolution must be a multiple of 240. It was made for use with the higan emulation package, but should be usable on other emulators with very minor adjustments.
+This shader is meant to provide accurate scanlines for those emulating 240p consoles on a CRT monitor. **In order to properly use this shader, the output vertical resolution must be a multiple of 240.** It was made for use with the higan emulation package, but should be usable on other emulators with very minor adjustments.
 
-Many popular shaders that attempt to generate scanlines for 240p console emulators are made for a generalist audience with a wide variety of use cases in mind. What this typically means is that the scanlines are meant to look good at arbitrary resolutions on an LCD monitor or television.
+Many popular shaders that attempt to generate scanlines for 240p console emulators are made for a generalist audience, with a wide variety of use cases in mind. What this typically means is that the scanlines are meant to look good at many resolutions, and used on an LCD monitor or television.
 
-When using a CRT monitor, however, we can achieve much better results by generating scanlines in a way similar to how they would be generated on real hardware. By blacking out every other vertical row of pixels (at native resolution) we can let the CRT do the bulk of the blending work.
+When using a CRT monitor, however, we can achieve much better results by generating scanlines in a manner similar to the real hardware. By blacking out every other vertical row of pixels (at native resolution) we can let the CRT do the bulk of the blending work.
 
 # Adding this shader to higan
 
